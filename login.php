@@ -1,11 +1,7 @@
 <? 
 // Verifier si une session existe
-if (isset($_SESSION["user"])){
-    header('Location: /index.php');
-    exit();
-}
+vardump($_SESSION);
 
-session_start();
 ?>
 
 <!DOCTYPE html>

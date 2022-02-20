@@ -7,7 +7,8 @@
             "dob": "",
             "number": "",
             "email": "",
-            "password": "admin"
+            "password": "admin",
+            "type": "admin"
         },
         {
             "username": "Matthieu.Randriantsoa",
@@ -16,7 +17,8 @@
             "dob": "2022-02-15",
             "number": "0770416573",
             "email": "randriantsoamatthieu@gmail.com",
-            "password": "1234"
+            "password": "1234",
+            "type": "user"
         }
     ]
 }

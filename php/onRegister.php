@@ -14,7 +14,8 @@ $user = array(
     "dob" => $_REQUEST["dob"],
     "number" => $_REQUEST["number"],
     "email" => $_REQUEST["email"],
-    "password" => $_REQUEST["password"]
+    "password" => $_REQUEST["password"],
+    "type" => "user"
 );
 
 array_push($json_array["users"], $user);
@@ -24,6 +25,6 @@ fwrite($file, json_encode($json_array, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICOD
 fclose($file);
 
 header('Location: /index.php');
-  exit();
+exit();
 
 ?>

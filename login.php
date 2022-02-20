@@ -1,3 +1,13 @@
+<? 
+// Verifier si une session existe
+if (isset($_SESSION["user"])){
+    header('Location: /index.php');
+    exit();
+}
+
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,27 +17,27 @@
     <!-- Integration de Bootsrap5 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>SubManager - Home</title>
+    <title>SubManager - Se connecter</title>
 </head>
 <body>
     <?php include("./templates/header.php"); ?>
     
     <div class="container py-5">
-    <form action="./php/onLogin.php" method="POST">
-  <div class="form-group">
-    <label for="username">Identifiant (prenom.nom)</label>
-    <input type="text" class="form-control" id="username" aria-describedby="username" placeholder="Ex: prenom.nom">
-  </div>
-  <div class="form-group">
-    <label for="password">Mot de passe</label>
-    <input type="password" class="form-control" id="password" placeholder="Entrez votre mot de passe">
-  </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="stayLogged">
-    <label class="form-check-label" for="stayLogged">Rester connecte</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Se connecter</button>
-</form>
+        <form action="./php/onLogin.php" method="POST">
+            <div class="form-group">
+                <label for="username">Identifiant (prenom.nom)</label>
+                <input type="text" class="form-control" name="username" id="username" aria-describedby="username" placeholder="Ex: prenom.nom">
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" class="form-control" name="password" id="password" placeholder="Entrez votre mot de passe">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="stayLogged">
+                <label class="form-check-label" for="stayLogged">Rester connecte</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Se connecter</button>
+        </form>
     </div>
 
 </body>

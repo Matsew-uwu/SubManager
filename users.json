@@ -1,0 +1,22 @@
+{
+    "users": [
+        {
+            "username": "admin.admin",
+            "firstname": "admin",
+            "lastname": "admin",
+            "dob": "",
+            "number": "",
+            "email": "",
+            "password": "admin"
+        },
+        {
+            "username": "Matthieu.Randriantsoa",
+            "fistname": "Matthieu",
+            "lastname": "Randriantsoa",
+            "dob": "2022-02-15",
+            "number": "0770416573",
+            "email": "randriantsoamatthieu@gmail.com",
+            "password": "1234"
+        }
+    ]
+}

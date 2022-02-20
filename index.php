@@ -14,8 +14,8 @@
     <div class="container-lg">
         <h1 class="text-center py-3">Bienvenue sur SubManager, la plateforme de gestion des abonnees</h1>
         <div class="text-center">
-            <a href="register.php" class="btn btn-dark">Se connecter</a>
-            <a href="login.php" class="btn btn-dark">S'inscrire</a>
+            <a href="./login.php" class="btn btn-dark">Se connecter</a>
+            <a href="./register.php" class="btn btn-dark">S'inscrire</a>
         </div>
     </div>
 </body>

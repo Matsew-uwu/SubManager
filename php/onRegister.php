@@ -23,5 +23,7 @@ $file = fopen("../users.json", "w+");
 fwrite($file, json_encode($json_array, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
 fclose($file);
 
+header('Location: /index.php');
+  exit();
 
 ?>
